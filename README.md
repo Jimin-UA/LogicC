@@ -176,3 +176,6 @@ exit -code:0.
 label_mem_err:
 out "Memory allocation error!" -target:console.
 exit -code:1.
+
+
+This is a personal hobby project / experimental prototype for learning SBCL and language design. Not accepting contributions or feature requests.

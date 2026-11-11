@@ -63,7 +63,8 @@
           (let ((attr-key (car attr)))
             (unless (or (member attr-key allowed)
                         (char= (char (symbol-name attr-key) 0) #\X))
-              t)))))))
+              (format t "[WARNING] Unknown attribute '-~A' for '~A'~%" 
+                      (string-downcase (symbol-name attr-key)) action))))))))
 (defun whitespace-char-p (ch)
   (member ch '(#\Space #\Tab #\Newline #\Return)))
 (defun trim-string (str)
