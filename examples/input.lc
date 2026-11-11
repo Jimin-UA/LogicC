@@ -1,7 +1,7 @@
 entry:
-    out "Як тебе звати?" -spec.
+    out "Whats your name?" -spec.
     name = read -source:console.
-    out "Вітаю, ".
+    out "Hi, ".
     out name -raw.
     out "!".
     exit -code:0.

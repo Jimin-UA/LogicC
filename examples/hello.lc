@@ -1,3 +1,3 @@
 entry:
-    out "Привіт, світ! Це LogicC." -target:console.
+    out "Hello World! This is a LogicC" -target:console.
     exit -code:0.
