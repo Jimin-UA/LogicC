@@ -1,0 +1,30 @@
+LogicC Public License (v1.0)
+
+Copyright (c) 2026 Михайло (Marcs / LogicC Project)
+
+1. FREE USE & DISTRIBUTION
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of the LogicC interpreter ("logicc.exe") and associated documentation, to use, 
+execute, and distribute it for personal, educational, or commercial purposes 
+without any royalties or licensing fees.
+
+2. TRADEMARK & INTELLECTUAL PROPERTY PROTECTION
+- The name "LogicC", its syntax specification, and official core components 
+  are the intellectual property of the original author.
+- You may NOT rename, modify, or redistribute altered versions of the 
+  interpreter binary or source code under the name "LogicC", nor present it 
+  as your own original work.
+- Any public distribution of modified versions or forks requires explicit 
+  attribution and a direct link to the original repository:
+  https://github.com/YourUsername/LogicC
+
+3. USER CODE & LIBRARIES
+All programs, scripts, modules, and `.lc` source files written by users 
+belong entirely to their respective authors and are NOT subject to any 
+restrictions by this license. Attribution when releasing projects made with 
+LogicC is optional, though greatly appreciated.
+
+4. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR 
+OTHER LIABILITY ARISING FROM THE USE OF THIS SOFTWARE.

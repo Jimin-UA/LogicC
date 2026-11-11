@@ -1,0 +1,7 @@
+entry:
+    out "Як тебе звати?" -spec.
+    name = read -source:console.
+    out "Вітаю, ".
+    out name -raw.
+    out "!".
+    exit -code:0.

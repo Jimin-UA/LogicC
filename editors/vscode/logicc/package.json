@@ -1,0 +1,34 @@
+{
+  "name": "logicc",
+  "displayName": "LogicC",
+  "description": "Language support for LogicC",
+  "version": "0.0.2",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.144.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "logicc",
+        "aliases": ["LogicC", "logicc"],
+        "extensions": [".lc"],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icon.png",
+          "dark": "./icon.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "logicc",
+        "scopeName": "source.logicc",
+        "path": "./syntaxes/logicc.tmLanguage.json"
+      }
+    ]
+  }
+}

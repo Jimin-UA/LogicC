@@ -1,0 +1,11 @@
+# Системні файли Windows
+Thumbs.db
+desktop.ini
+
+# Файли редакторів
+.vscode/
+.idea/
+
+# Тимчасові файли
+*.tmp
+*.log

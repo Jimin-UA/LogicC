@@ -1,0 +1,140 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "LogicC",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#lifecycle-keywords" },
+    { "include": "#control-keywords" },
+    { "include": "#memory-keywords" },
+    { "include": "#functions" },
+    { "include": "#labels" },
+    { "include": "#types" },
+    { "include": "#attributes" },
+    { "include": "#punctuation" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.logicc",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.logicc",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "lifecycle-keywords": {
+      "patterns": [
+        {
+          "name": "storage.type.logicc",
+          "match": "\\b(entry:|entry|exit|stop|return)\\b"
+        }
+      ]
+    },
+    "control-keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.conditional.logicc",
+          "match": "\\b(check|else|jump)\\b"
+        },
+        {
+          "name": "keyword.control.repeat.logicc",
+          "match": "\\b(repeat)\\b"
+        }
+      ]
+    },
+    "memory-keywords": {
+      "patterns": [
+        {
+          "name": "entity.name.function.system.logicc",
+          "match": "\\b(alloc|free|write|read|fill|out|wait)\\b"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "keyword.control.import.logicc",
+          "match": "\\b(include)\\b"
+        },
+        {
+          "name": "keyword.other.fn.logicc",
+          "match": "\\b(fn|call)\\b"
+        },
+        {
+          "name": "entity.name.function.logicc",
+          "match": "(?<=\\b(fn|call)\\s+)[a-zA-Z_][a-zA-Z0-9_]*"
+        }
+      ]
+    },
+    "labels": {
+      "patterns": [
+        {
+          "name": "entity.name.label.logicc",
+          "match": "^\\s*[a-zA-Z_][a-zA-Z0-9_]*(?=:)"
+        }
+      ]
+    },
+    "types": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.logicc",
+          "match": "-(i8|i16|i32|i64|u8|u16|u32|u64|f32|f64|text|raw|spec|bytes|dynamic|static)\\b"
+        }
+      ]
+    },
+    "attributes": {
+      "patterns": [
+        {
+          "name": "entity.other.attribute-name.logicc",
+          "match": "-[a-zA-Z_][a-zA-Z0-9_]*:"
+        },
+        {
+          "name": "comment.line.double-slash.logicc",
+          "match": "-[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.logicc",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.logicc",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.hex.logicc",
+          "match": "\\b0x[0-9a-fA-F]+\\b"
+        },
+        {
+          "name": "constant.numeric.decimal.logicc",
+          "match": "\\b[0-9]+\\b"
+        }
+      ]
+    },
+    "punctuation": {
+      "patterns": [
+        {
+          "name": "punctuation.terminator.logicc",
+          "match": "[\\.:,]"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.logicc"
+}

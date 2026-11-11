@@ -1,0 +1,1 @@
+To get started, copy this folder into your Visual Studio Code extensions storage.
